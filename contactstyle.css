@@ -1,0 +1,659 @@
+/* ==========================
+   BELLE ELEGANCE CONTACT PAGE
+   ========================== */
+
+
+/* Header */
+
+header {
+    background-color: #000;
+    padding:1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.brandlogo {
+
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    
+    
+
+}
+
+
+
+.nav-link ul {
+
+    display: flex;
+    gap: 30px;
+    list-style: none;
+     gap: 1rem;
+
+}
+
+
+
+.nav-link a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: .3s;
+
+}
+
+
+
+.nav-link a:hover {
+
+    color: #d4af37;
+
+}
+
+
+
+
+
+/* Contact Hero */
+
+
+.contact-hero {
+   background:rgb(73, 70, 69);
+    background-size: cover;
+    background-position: center;
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    color:white;
+
+}
+
+
+
+.contact-hero h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    color:gold;
+    
+
+}
+
+
+
+.contact-hero p {
+
+    font-size:20px;
+
+    max-width:700px;
+
+    margin:auto;
+    
+
+}
+
+
+
+
+
+/* Contact Section */
+
+
+.contact-section {
+
+
+    text-align:center;
+
+    padding:70px 10%;
+
+    background:#fffaf5;
+
+
+}
+
+
+
+.contact-section h2,
+.appointment h2,
+.social-contact h2 {
+
+
+    font-family:Georgia, serif;
+
+    color:#b8860b;
+
+    font-size:35px;
+
+
+}
+
+
+
+.contact-section > p {
+
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* Contact Cards */
+
+
+.contact-cards {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+
+}
+
+
+
+.contact-card {
+
+
+    background:white;
+
+    width:280px;
+
+    padding:35px 25px;
+
+    border-radius:15px;
+
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.contact-card:hover {
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+.contact-card i {
+
+
+    font-size:40px;
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.contact-card h3 {
+
+
+    font-size:22px;
+
+    color:#000;
+
+
+}
+
+
+
+
+
+
+
+/* Appointment Section */
+
+
+.appointment {
+
+
+    background:#000;
+
+    padding:70px 20px;
+
+}
+
+
+
+.form-container {
+
+
+    background:white;
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+}
+
+
+
+.form-container h2 {
+
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.input-group {
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    outline:none;
+
+
+}
+
+
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+
+
+    border-color:#d4af37;
+
+
+}
+
+
+
+.input-group textarea {
+
+
+    height:130px;
+
+    resize:none;
+
+
+}
+
+
+
+.form-container button {
+
+
+    width:100%;
+
+    padding:15px;
+
+
+    background:#000;
+
+    color:white;
+
+    border:none;
+
+    border-radius:30px;
+
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+.form-container button:hover {
+
+
+    background:#d4af37;
+
+    color:#000;
+
+
+}
+
+
+
+
+
+
+/* Social Section */
+
+
+.social-contact {
+
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    background:#fffaf5;
+
+
+}
+
+
+
+.big-social-icons {
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+.big-social-icons a {
+
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    height:60px;
+
+    width:60px;
+
+
+    background:#000;
+
+    color:#d4af37;
+
+
+    border-radius:50%;
+
+
+    margin:10px;
+
+
+    font-size:28px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.big-social-icons a:hover {
+
+
+    background:#d4af37;
+
+    color:#000;
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+
+/* Footer */
+
+
+footer {
+
+
+    background:#000;
+
+    color:white;
+
+    padding:40px 20px;
+
+
+}
+
+
+
+.footer-section h3 {
+
+
+    color:#d4af37;
+
+
+}
+
+
+
+.footer-section i {
+
+
+    color:#d4af37;
+
+}
+
+
+
+
+
+.btn {
+
+
+    margin-top:15px;
+
+    padding:10px 25px;
+
+    background:#d4af37;
+
+    color:#000;
+
+    border:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.footer-line {
+
+
+    margin-top:30px;
+
+    border-color:#555;
+
+
+}
+
+
+
+
+.year {
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+/* Mobile Design */
+
+
+@media(max-width:768px){
+
+
+
+header {
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.nav-link ul {
+
+
+    flex-direction:column;
+
+    text-align:center;
+
+
+}
+
+
+
+.contact-hero h1 {
+
+
+    font-size:35px;
+
+
+}
+
+
+
+.contact-cards {
+
+
+    flex-direction:column;
+
+    align-items:center;
+
+
+}
+
+
+
+.form-container {
+
+
+    padding:25px;
+
+
+}
+
+
+}
+/* mobile  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 8%;
+    position: relative;
+}
+
+
+.burger{
+    display:none ;
+    font-size:28px ;
+    cursor:pointer
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .burger{
+        display: block;
+        z-index:1001;
+
+    }
+    .nav-link{
+        display:none !important;
+        position: relative;
+        top:100%;
+        left:0;
+        width:100%;
+        background:black;
+        box-shadow:0 10px 20px  rgba(0,0,0,.15)
+    }
+
+
+    .nav-link.active{
+        display:block !important;
+    }
+    
+    .nav-link ul{
+        flex-direction: column;
+        gap:0;
+    }
+    .nav-link li{
+        padding: 18px;
+         border-bottom: 1px solid #eee;
+         text-align: center;
+
+    }
+
+}

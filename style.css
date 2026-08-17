@@ -1,0 +1,417 @@
+
+*{
+    margin:0% ;
+    padding:0% ;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color:gold
+}
+.carousel{
+    background-color: #fffaf5
+    
+} 
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 0 0 .708L10.293 8l-5.647 5.646a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708l-6-6a.5.5 0 0 0-.708 0z'/%3E%3C/svg%3E") !important;
+}
+
+
+/* header style */
+header{
+    background-color: #000000;
+    color: gold;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* brandlogo style */
+header .brandlogo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+header .nav-link ul{
+    list-style: none;
+    display: flex;
+    margin:30px; 
+}
+
+header .nav-link a{
+    margin-left: 20px; 
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+
+
+header .nav-link ul a{
+    color: gold;
+}
+.mycarousel{
+    max-width: 700px;
+    margin: auto;
+    
+    
+}
+img{
+    width: 400px;
+    height: 400px;
+    margin-top: 10%;
+}
+
+img{
+    margin-top:10%;
+    width:400px;
+    height:400px;
+}
+
+/*=====================================
+   SERVICE SECTION
+=====================================*/
+
+#service{
+    margin-top:5%;
+    min-height:100vh;
+    padding:90px 8%;
+    background:linear-gradient(135deg,#d4af37,rgb(245, 219, 75),rgb(238, 219, 111));
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    
+}
+
+.section-title h2{
+    font-size:2.8rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.section-title p{
+    color:rgba(255,255,255,.75);
+    font-size:1.1rem;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    width:100%;
+    max-width:1200px;
+     
+}
+
+/* Glass Card */
+
+.service-box{
+
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.18);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-radius:25px;
+    padding:35px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.25);
+
+    transition:.45s ease;
+    position:relative;
+    overflow:hidden;
+    
+}
+
+/* Glass shine */
+
+.service-box::before{
+
+    content:'';
+    position:absolute;
+    top:-120%;
+    left:-50%;
+    width:220%;
+    height:220%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transform:rotate(25deg);
+    transition:.7s;
+}
+
+.service-box:hover::before{
+    top:100%;
+}
+
+/* Hover */
+
+.service-box:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    background:rgba(255,255,255,.18);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.35);
+}
+
+.service-box h3{
+    color:black;
+    font-size:1.6rem;
+    margin-bottom:18px;
+    font-weight:600;
+}
+
+.service-box p{
+    color:black;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+   
+/* Mobile */
+
+@media(max-width:768px){
+    #service{
+        padding:70px 25px;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .service-box{
+        padding:28px;
+    }
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: #111;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3 {
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: gold;
+    display: block;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.footer-section p {
+    color: #ddd;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.footer-section i {
+    color: gold;
+    margin-right: 10px;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+} 
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background: #222;
+    border: 2px solid gold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    font-size: 18px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: gold;
+    color: #111;
+    transform: translateY(-6px) rotate(360deg);
+}
+
+/* Contact */
+
+.address p {
+    display: flex;
+    align-items: center;
+}
+
+/* Opening Hours */
+
+.hours p {
+    margin-bottom: 10px;
+}
+
+/* Button */
+
+footer .btn {
+    background: gold;
+    color: #111;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer .btn:hover {
+    background: #fff;
+    color: #111;
+    transform: scale(1.05);
+}
+
+/* Divider */
+
+.footer-line {
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 40px 0 20px;
+}
+
+/* Copyright */
+
+.year {
+    text-align: center;
+}
+
+.copy {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    footer{
+        text-align:center;
+    }
+
+    .footer-content{
+        gap:50px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .address p{
+        justify-content:center;
+    }
+}
+
+
+/* mobile  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 8%;
+    position: relative;
+}
+
+
+.burger{
+    display:none ;
+    font-size:28px ;
+    cursor:pointer
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .burger{
+        display: block;
+        z-index:1001;
+
+    }
+    .nav-link{
+        display:none !important;
+        position: relative;
+        top:100%;
+        left:0;
+        width:100%;
+        background:black;
+        box-shadow:0 10px 20px  rgba(0,0,0,.15)
+    }
+
+
+    .nav-link.active{
+        display:block !important;
+    }
+    
+    .nav-link ul{
+        flex-direction: column;
+        gap:0;
+    }
+    .nav-link li{
+        padding: 18px;
+         border-bottom: 1px solid #eee;
+         text-align: center;
+
+    }
+
+}
