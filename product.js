@@ -1,9 +1,12 @@
 // ---------- PRODUCT DATABASE ----------
     const products = [
-        { id: 1, name: "Spa services", description: "Relax and rejuvenate with our luxurious spa treatments designed to refresh your body and mind.", brand: "Belle Elegance", price: 50, originalPrice: 60, discount: "10%", image: "productimages/black.png"},
-        { id: 2, name: "Hair Styles",  description: "Get stunning, trendy, and elegant hairstyles tailored to suit your personality and every occasion.", brand: "Belle Elegance", price: 55, originalPrice: 85, discount: "20%", image: "productimages/white.png"},
-        { id: 3, name: "Hair washing",  description: "Enjoy a deep cleansing hair wash that leaves your hair fresh, soft, healthy, and beautifully scented.", brand: "Belle Elegance", price: 32, originalPrice: 50, discount: "36%", image:"productimages/pink.png"},
-        { id: 4, name: "Body massages",  description: "Relieve stress and muscle tension with our professional full-body massage for complete relaxation.", brand: "Belle Elegance", price: 70, originalPrice: 110, discount: "36%", image: "productimages/brown.png"},
+        { id: 1, name: "School Shoes", description: "Comfortable and durable school shoes designed to keep little feet supported and ready for busy school days.", brand: "Mini Steps", price: 120, originalPrice: 150, discount: "20%", image: "productimages/black shoe.jpeg"},
+
+{ id: 2, name: "Kids Sneakers", description: "Stylish and comfortable sneakers made for active children who love to run, play, and explore.", brand: "Mini Steps", price: 150, originalPrice: 180, discount: "17%", image: "productimages/sneakers.jpeg"},
+
+{ id: 3, name: "Kids Sandals", description: "Lightweight and comfortable sandals perfect for warm days, outings, holidays, and everyday adventures.", brand: "Mini Steps", price: 100, originalPrice: 130, discount: "23%", image: "productimages/sandals.jpeg"},
+
+{ id: 4, name: "Special Occasion Shoes", description: "Elegant and stylish shoes designed to make your little one look their best at parties, weddings, birthdays, and special events.", brand: "Mini Steps", price: 140, originalPrice: 175, discount: "20%", image: "productimages/spec.jpeg"},
        
     ];
 

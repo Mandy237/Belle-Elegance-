@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact | Belle Elegance Salon</title>
+<title>Contact | Mini Steps</title>
 
 
 <link rel="stylesheet" href="style.css">
@@ -26,14 +27,15 @@
 <header>
 
 <div>
-<img class="brandlogo" src="images/Logo.png" alt="Belle Elegance Logo">
+<img class="brandlogo" src="images/Logo.png" alt="Mini Steps Logo">
 </div>
 
 
-    <!-- Hamburger -->
-         <div class="burger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-         </div>
+<!-- Hamburger -->
+
+<div class="burger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+</div>
 
 
 <div class="nav-link">
@@ -50,7 +52,6 @@
 
 <a href="contact.html"><li>Contact</li></a>
 
-
 </ul>
 
 </div>
@@ -63,17 +64,18 @@
 
 
 
+
 <!-- CONTACT HERO -->
 
 
 <section class="contact-hero">
 
 
-<h1>Contact Belle Elegance</h1>
+<h1>Contact Mini Steps</h1>
 
 <p>
-We would love to hear from you. Book your appointment and experience
-beauty, elegance, and confidence.
+We would love to hear from you. Get in touch with us and find the
+perfect pair of shoes for your little one.
 </p>
 
 
@@ -95,8 +97,8 @@ beauty, elegance, and confidence.
 
 
 <p>
-Have questions or ready for your next beauty transformation?
-Our team is here to assist you.
+Have questions about our children's shoes or need help finding the
+right size and style? Our team is here to assist you.
 </p>
 
 
@@ -106,6 +108,8 @@ Our team is here to assist you.
 
 
 
+<!-- LOCATION -->
+
 <div class="contact-card">
 
 <i class="fa-solid fa-location-dot"></i>
@@ -113,16 +117,16 @@ Our team is here to assist you.
 <h3>Visit Us</h3>
 
 <p>
-Dansoman Ssnit Flat,
-Good Shepherd Hotel
+6 Catalina Street
 </p>
-
 
 </div>
 
 
 
 
+
+<!-- PHONE -->
 
 <div class="contact-card">
 
@@ -131,9 +135,8 @@ Good Shepherd Hotel
 <h3>Call Us</h3>
 
 <p>
-0256291170
+0556824550
 </p>
-
 
 </div>
 
@@ -141,16 +144,17 @@ Good Shepherd Hotel
 
 
 
+<!-- WHATSAPP -->
+
 <div class="contact-card">
 
-<i class="fa-solid fa-envelope"></i>
+<i class="fa-brands fa-whatsapp"></i>
 
-<h3>Email Us</h3>
+<h3>WhatsApp Us</h3>
 
 <p>
-akotomandy74@gmail.com
+0276257239
 </p>
-
 
 </div>
 
@@ -169,7 +173,8 @@ akotomandy74@gmail.com
 
 
 
-<!-- APPOINTMENT FORM -->
+
+<!-- ORDER / ENQUIRY FORM -->
 
 
 <section class="appointment">
@@ -178,24 +183,38 @@ akotomandy74@gmail.com
 <div class="form-container">
 
 
-<h2>Book An Appointment</h2>
+<h2>Make An Enquiry</h2>
 
 
-<form>
+<form id="enquiryForm">
 
+
+<!-- NAME -->
 
 <div class="input-group">
 
-<input type="text" placeholder="Your Name" required>
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required
+>
 
 </div>
 
 
 
 
+<!-- PHONE -->
+
 <div class="input-group">
 
-<input type="tel" placeholder="Phone Number" required>
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required
+>
 
 </div>
 
@@ -203,29 +222,35 @@ akotomandy74@gmail.com
 
 
 
-<div class="input-group">
-
-<input type="email" placeholder="Email Address">
-
-</div>
-
-
-
-
+<!-- FOOTWEAR -->
 
 <div class="input-group">
 
-<select>
+<select id="footwear" required>
 
-<option>Select Service</option>
+<option value="">
+Select Footwear
+</option>
 
-<option>Hair Styling</option>
+<option value="School Shoes">
+School Shoes
+</option>
 
-<option>Braiding</option>
+<option value="Sneakers">
+Sneakers
+</option>
 
-<option>Hair Treatment</option>
+<option value="Sandals">
+Sandals
+</option>
 
-<option>Beauty Services</option>
+<option value="Special Occasion Shoes">
+Special Occasion Shoes
+</option>
+
+<option value="Other">
+Other
+</option>
 
 </select>
 
@@ -235,9 +260,15 @@ akotomandy74@gmail.com
 
 
 
+<!-- MESSAGE -->
+
 <div class="input-group">
 
-<textarea placeholder="Your Message"></textarea>
+<textarea
+id="message"
+placeholder="Tell us what you are looking for..."
+required
+></textarea>
 
 </div>
 
@@ -245,9 +276,13 @@ akotomandy74@gmail.com
 
 
 
+<!-- SEND TO WHATSAPP -->
+
 <button type="submit">
 
-Send Message
+<i class="fa-brands fa-whatsapp"></i>
+
+Send Enquiry
 
 </button>
 
@@ -268,23 +303,27 @@ Send Message
 
 
 
+
 <!-- SOCIAL MEDIA -->
 
 
 <section class="social-contact">
 
 
-<h2>Follow Belle Elegance</h2>
+<h2>Follow Mini Steps</h2>
 
 
 <p>
-Stay updated with our latest styles, offers and beauty inspiration.
+Stay updated with our latest children's shoes, new arrivals, offers,
+and exciting footwear styles.
 </p>
 
 
 
 <div class="big-social-icons">
 
+
+<!-- FACEBOOK -->
 
 <a href="https://www.facebook.com/share/1BUxrusCVX/">
 
@@ -294,6 +333,8 @@ Stay updated with our latest styles, offers and beauty inspiration.
 
 
 
+<!-- INSTAGRAM -->
+
 <a href="#">
 
 <i class="fa-brands fa-instagram"></i>
@@ -302,13 +343,17 @@ Stay updated with our latest styles, offers and beauty inspiration.
 
 
 
-<a href="https://wa.me/qr/YXAKURSTWPYBK1">
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/233256291170">
 
 <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
 
+
+<!-- TIKTOK -->
 
 <a href="https://vt.tiktok.com/ZSCohLftf/">
 
@@ -331,6 +376,9 @@ Stay updated with our latest styles, offers and beauty inspiration.
 
 
 
+<!-- FOOTER -->
+
+
 <footer>
 
 
@@ -342,14 +390,18 @@ Stay updated with our latest styles, offers and beauty inspiration.
 
 
 
+<!-- ABOUT MINI STEPS -->
+
+
 <div class="footer-section">
 
 
-<h3>Belle Elegance Salon</h3>
+<h3>Mini Steps</h3>
 
 
 <p>
-Bringing out your best self with our services and flawless hairstyles.
+Stylish, comfortable, and quality footwear made for little feet
+and every big adventure.
 </p>
 
 
@@ -357,6 +409,11 @@ Bringing out your best self with our services and flawless hairstyles.
 
 
 
+
+
+
+
+<!-- CONTACT INFO -->
 
 
 <div class="footer-section">
@@ -366,20 +423,29 @@ Bringing out your best self with our services and flawless hairstyles.
 
 
 <p>
+
 <i class="fas fa-map-marker-alt"></i>
-Dansoman Ssnit Flat, Good Shepherd Hotel
+
+6 Catalina Street
+
 </p>
 
 
 <p>
+
 <i class="fas fa-phone"></i>
-0256291170
+
+0556824550
+
 </p>
 
 
 <p>
-<i class="fas fa-envelope"></i>
-akotomandy74@gmail.com
+
+<i class="fa-brands fa-whatsapp"></i>
+
+0276257239
+
 </p>
 
 
@@ -391,6 +457,9 @@ akotomandy74@gmail.com
 
 
 
+<!-- OPENING HOURS -->
+
+
 <div class="footer-section">
 
 
@@ -398,12 +467,11 @@ akotomandy74@gmail.com
 
 
 <p>
-Monday - Saturday: 10am - 8pm
+Monday - Saturday: 7:30am - 6pm
 </p>
 
-
 <p>
-Sunday: 11am - 6pm
+Sunday: 9am - 5pm
 </p>
 
 
@@ -440,7 +508,8 @@ Toggle Theme
 <p class="copy">
 
 &copy; <span id="year"></span>
-Belle Elegance Salon. All Rights Reserved.
+
+Mini Steps. All Rights Reserved.
 
 </p>
 
@@ -455,10 +524,82 @@ Belle Elegance Salon. All Rights Reserved.
 
 
 
+
+
+<!-- BOOTSTRAP -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- BURGER MENU -->
+
 <script src="burgericon.js"></script>
+
+
+
+
+
+<!-- WHATSAPP ENQUIRY SCRIPT -->
+
+<script>
+
+document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    /* Get information from the form */
+
+    const name = document.getElementById("name").value;
+
+    const phone = document.getElementById("phone").value;
+
+    const footwear = document.getElementById("footwear").value;
+
+    const message = document.getElementById("message").value;
+
+
+    /* Mini Steps WhatsApp number */
+
+    const whatsappNumber = "233276257239";
+
+
+    /* Create the WhatsApp message */
+
+    const whatsappMessage =
+        "Hello Mini Steps! 👋\n\n" +
+        "I would like to make an enquiry.\n\n" +
+        "👤 Name: " + name + "\n" +
+        "📞 Phone: " + phone + "\n" +
+        "👟 Footwear: " + footwear + "\n" +
+        "💬 Message: " + message;
+
+
+    /* Encode the message so WhatsApp can read it correctly */
+
+    const encodedMessage =
+        encodeURIComponent(whatsappMessage);
+
+
+    /* Create WhatsApp link */
+
+    const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodedMessage;
+
+
+    /* Open WhatsApp */
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
 
 
 </body>
 
 </html>
+```
